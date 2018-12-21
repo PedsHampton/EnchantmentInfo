@@ -14,7 +14,6 @@ class EnchantmentInfoUI extends PluginBase implements Listener{
         $this->getLogger()->info("EnchantmentInfoUI Plugin Enabled By PedsHampton");
     }
     public function onDisable(): void{
-        $this->getServer()->getPluginManager()->registerEvents(($this), $this);
         $this->getLogger()->info("EnchantmentInfoUI Plugin Disabled By PedsHampton");
     }
     public function checkDepends(): void{
@@ -27,7 +26,7 @@ class EnchantmentInfoUI extends PluginBase implements Listener{
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool{
         if($cmd->getName() == "enchantmentinfo"){
             if(!($sender instanceof Player)){
-                $sender->addTitle("§a§lEnchantmentInfoUI       \n       §a§lBy       \n       §a§lPedsHampton       \n        §a§lClosing", false);
+                $sender->addTitle("§a§lEnchantmentInfoUI\n§a§lBy\n§a§lPedsHampton\n§a§lClosing", false);
                 return true;
             }
             $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
@@ -37,10 +36,10 @@ class EnchantmentInfoUI extends PluginBase implements Listener{
                 }
                 switch ($result) {
                     case 0:
-                        $sender->addTitle("§a§lEnchantmentInfoUI       \n       §a§lBy       \n       §a§lPedsHampton       \n        §a§lClosing");
+                        $sender->addTitle("§a§lEnchantmentInfoUI\n§a§lBy\n§a§lPedsHampton\n§a§lClosing");
                         break;
                     case 1:
-                        $sender->addTitle("§a§lEnchantmentInfoUI       \n       §a§lBy       \n       §a§lPedsHampton       \n        §a§lClosing");
+                        $sender->addTitle("§a§lEnchantmentInfoUI\n§a§lBy\n§a§lPedsHampton\n§a§lClosing");
                         break;
                 }
             });
