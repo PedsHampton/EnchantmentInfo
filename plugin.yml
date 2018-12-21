@@ -1,0 +1,9 @@
+name: EnchantmentInfoUI
+main: EnchantmentInfoUI\EnchantmentInfoUI
+author: PedsHampton
+version: 1.0.0
+api: [3.0.0]
+commands:
+  enchantmentinfo:
+    aliases: [enchantinfo, einfo, enchinfo]
+    description: Checks Info On A VanillaEnchantment
