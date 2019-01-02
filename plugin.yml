@@ -1,8 +1,8 @@
 name: EnchantmentInfo
 main: EnchantmentInfo\EnchantmentInfo
 author: PedsHampton
-version: 3.0.0
-api: [3.0.0]
+version: 4.0.0
+api: [3.0.0, 3.5.3]
 commands:
   enchantmentinfo:
     aliases: [enchantinfo, einfo, enchinfo]
